@@ -12,8 +12,7 @@ public class Casa {
     }
 
     public double CalcularPreco(int tamanho, int quartos){
-        tamanho = 80;
-        quartos = 4;
-        return preco += tamanho*quartos;
+        float preco;
+        return preco = (4890*tamanho) + (730*quartos);
     }
 }
