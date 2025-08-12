@@ -7,15 +7,19 @@ public class PixPagamento extends MetodoPagamento{
     }
 
     @Override
-    public double metodoPagamento(double valor) {
+    public double processaPagamento(double valor) {
+        this.valorPagamento = valor;
         System.out.println("Pagamento realizado");
         return valor;
     }
 
     @Override
     public void mostrarDetalhesPagamento() {
+        System.out.println("-------------------------");
         System.out.println("Detalhes do pagamento: ");
-        System.out.println("Realizado via Pix.");
+        System.out.println("Realizado via "+nomeMetodo);
+        System.out.println("Valor: "+valorPagamento);
         System.out.println("Id pagamento: "+idPagamento);
+        System.out.println("-------------------------");
     }
 }

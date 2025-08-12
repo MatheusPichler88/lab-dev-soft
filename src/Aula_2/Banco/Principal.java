@@ -10,24 +10,24 @@ public class Principal {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Selecione o método de pagamento");
-        System.out.println("1- Cartão de Credito");
+        System.out.println("1 - Cartão de Credito");
         System.out.println("2 - Paypal ");
         System.out.println("3 - Pix");
         System.out.println("Escolha:");
         switch(sc.nextInt()){
             case 1:
                 System.out.println("Digite o valor: ");
-                cc.metodoPagamento(sc.nextDouble());
+                cc.processaPagamento(sc.nextDouble());
                 cc.mostrarDetalhesPagamento();
                 break;
             case 2:
                 System.out.println("Digite o valor: ");
-                pp.metodoPagamento(sc.nextDouble());
+                pp.processaPagamento(sc.nextDouble());
                 pp.mostrarDetalhesPagamento();
                 break;
             case 3:
                 System.out.println("Digite o valor: ");
-                pix.metodoPagamento(sc.nextDouble());
+                pix.processaPagamento(sc.nextDouble());
                 pix.mostrarDetalhesPagamento();
                 break;
             default:
